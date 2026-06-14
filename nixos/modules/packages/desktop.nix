@@ -26,7 +26,7 @@
     polychromatic             # RGB Configuration
 
     # Office & Productivity 
-    libreoffice               # Office Suite 
+    libreoffice-qt            # Office Suite 
     speedcrunch               # Calculator 
     zed-editor                # Code Editor
     xournalpp                 # Handwriting App

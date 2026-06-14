@@ -9,6 +9,7 @@ alias fb='z -'
 
 # Nix Related Aliases 
 alias nixRebuild='sudo nixos-rebuild switch'
+alias nixTest='sudo nixos-rebuild test' 
 alias ns="nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history"
 
 # Enable zoxide (keep at bottom of config)

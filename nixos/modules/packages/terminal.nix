@@ -36,6 +36,7 @@ in
     yazi                      # File Manager
     cmus                      # Music Player
     taskwarrior3              # Task Manager
+    visidata                  # Spreadsheet editor
 
     # Hardware/System Inspection
     lshw                      # Show Bus ID values 
