@@ -1,6 +1,6 @@
-# Rohaan's NixOS Config - Gaming packages 
+# Rohaan's NixOS Config - Gaming packages
 
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
 {
 
@@ -9,6 +9,10 @@
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
+  };
+
+  environment.sessionVariables = {
+    STEAM_RUNTIME = "1";
   };
 
 }

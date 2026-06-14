@@ -1,24 +1,29 @@
 # Rohaan's NixOS Config - Global Options
 
-{ lib, ... }: 
+{ lib, ... }:
 
 {
-  options.myConfig = { 
+  options.myConfig = {
 
-    username = lib.mkOption { 
-      type = lib.types.str; 
-      description = "Primary User Username"; 
-    };  
+    username = lib.mkOption {
+      type = lib.types.str;
+      description = "Primary User Username";
+    };
 
-    hostname = lib.mkOption { 
-      type = lib.types.str; 
-      description = "System Hostname"; 
-    };  
+    hostname = lib.mkOption {
+      type = lib.types.str;
+      description = "System Hostname";
+    };
 
-    homeDir = lib.mkOption { 
-      type = lib.types.str; 
-      description = "Path to primary user's home directory"; 
-    };  
+    homeDir = lib.mkOption {
+      type = lib.types.str;
+      description = "Path to primary user's home directory";
+    };
+
+    desktop = lib.mkOption {
+      type = lib.types.str;
+      description = "Active desktop environment";
+    };
 
   };
-} 
+}
