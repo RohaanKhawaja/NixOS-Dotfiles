@@ -14,6 +14,7 @@
       ./modules/system/input.nix 
       ./modules/system/hardware.nix 
       ./modules/system/networking.nix 
+      ./modules/system/maintenance.nix 
 
       ./modules/desktop/kde.nix
 
