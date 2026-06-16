@@ -39,4 +39,8 @@
     desktop = "hyprland"; # Set to appropriate desktop
   };
 
+  # Session variable for active desktop type
+  environment.sessionVariables = {
+    MY_DESKTOP = config.myConfig.desktop;
+  };
 }

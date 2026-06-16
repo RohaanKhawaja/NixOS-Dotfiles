@@ -5,7 +5,7 @@ fi
 
 # Start hyprland immediately after autologin
 if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
-  if [ "$(cat /etc/current-desktop)" = "hyprland" ]; then
+  if [ "$MY_DESKTOP" = "hyprland" ]; then
     exec uwsm start hyprland.desktop
   fi
 fi
