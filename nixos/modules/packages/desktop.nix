@@ -1,20 +1,20 @@
-# Rohaan's NixOS Config - Desktop packages 
+# Rohaan's NixOS Config - Desktop packages
 
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
 {
 
   environment.systemPackages = with pkgs; [
-    # Browsers 
-    firefox                   # Primary Browser 
-    brave                     # Chromium-Based Browser 
-    
+    # Browsers
+    firefox                   # Primary Browser
+    brave                     # Chromium-Based Browser
+
     # Communication
     vesktop                   # Discord Client
     zapzap                    # Whatsapp Client
-    
-    # Media 
-    pear-desktop              # Youtube Music Client 
+
+    # Media
+    pear-desktop              # Youtube Music Client
     vlc                       # Media Player
     mpv                       # Media Player
 
@@ -25,9 +25,9 @@
     wootility                 # Wooting Configuration
     polychromatic             # RGB Configuration
 
-    # Office & Productivity 
-    libreoffice-qt            # Office Suite 
-    speedcrunch               # Calculator 
+    # Office & Productivity
+    libreoffice-qt            # Office Suite
+    speedcrunch               # Calculator
     zed-editor                # Code Editor
     xournalpp                 # Handwriting App
 
@@ -37,21 +37,22 @@
     qbittorrent               # Torrenting Client
     nicotine-plus             # P2P Music Client (Soulseek)
     switcheroo                # File convertor
-    
+
     # Creative Tools
     #bambu-studio              # 3D Printing Slicer
     kicad                     # Circuit & PCB Design Suite
-    freecad                   # General CAD 
+    freecad                   # General CAD
     ltspice                   # Circuit Simulation
     drawio                    # Flowcharts and Diagrams
     inkscape                  # Vector Graphics Editor
     gimp                      # Image Manipulation
-    audacity                  # Audio Recording 
+    gwenview                  # Image Viewer
+    audacity                  # Audio Recording
     obs-studio                # Screen Recording/Streaming
-    
+
   ] ++ (with pkgs.kdePackages; [
     elisa                     # Music Player
-    kate                      # Rich Text Editor 
+    kate                      # Rich Text Editor
     dolphin                   # File Manager
     kdeconnect-kde            # Phone-PC Sync
     ark                       # File Archiver
