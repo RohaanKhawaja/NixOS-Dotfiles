@@ -31,8 +31,10 @@ in
 
     # CLI Apps
     btop                      # System Resource Monitor
+    nvtopPackages.amd         # GPU Resource Monitor (Change based on GPU brand)
     discordo                  # Client for Discord
     tdf                       # PDF Viewer
+    img-cat                   # Image Viewer
     yazi                      # File Manager
     cmus                      # Music Player
     taskwarrior3              # Task Manager

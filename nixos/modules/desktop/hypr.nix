@@ -39,10 +39,11 @@
   environment.systemPackages = with pkgs; [
     hyprshot                            # Screenshot Utility
     hyprlock                            # Lockscreen Utility
-    hyprpaper                           # Wallpaper Utility
     hypridle                            # Idling Utility
     hyprshade                           # Screen colour adjustment
     hyprcursor                          # Cursor Utility
+    hyprpaper                           # Wallpaper Utility
+    mpvpaper                            # Live Wallpaper daemon
     rose-pine-cursor                    # Cursor theme
     wofi                                # App Launcher
     waybar                              # Status Bar

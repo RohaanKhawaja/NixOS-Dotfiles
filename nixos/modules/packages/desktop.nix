@@ -46,7 +46,6 @@
     drawio                    # Flowcharts and Diagrams
     inkscape                  # Vector Graphics Editor
     gimp                      # Image Manipulation
-    gwenview                  # Image Viewer
     audacity                  # Audio Recording
     obs-studio                # Screen Recording/Streaming
 
@@ -56,6 +55,7 @@
     dolphin                   # File Manager
     kdeconnect-kde            # Phone-PC Sync
     ark                       # File Archiver
+    gwenview                  # Image Viewer
   ]);
 
 }
