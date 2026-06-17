@@ -17,7 +17,7 @@
 
   # see :help nixCats.flake.outputs.categories
   categoryDefinitions = { pkgs, settings, categories, extra, name, mkPlugin, ... }@packageDef: {
-    # to define and use a new category, simply add a new list to a set here, 
+    # to define and use a new category, simply add a new list to a set here,
     # and later, you will include categoryname = true; in the set you
     # provide when you build the package using this builder function.
     # see :help nixCats.flake.outputs.packageDefinitions for info on that section.
@@ -27,13 +27,51 @@
     # at RUN TIME for plugins. Will be available to PATH within neovim terminal
     # this includes LSPs
     lspsAndRuntimeDeps = {
-      general = with pkgs; [ ];
+      general = with pkgs; [
+        clang-tools
+        pyright
+        texlab
+        lua-language-server
+        tree-sitter
+        gcc
+      ];
     };
 
     # This is for plugins that will load at startup without using packadd:
     startupPlugins = {
-      general = with pkgs.vimPlugins; [ 
-        dracula-nvim
+      general = with pkgs.vimPlugins; [
+        dracula-nvim          # Theme
+
+        # UI
+        lualine-nvim
+        nvim-web-devicons
+        indent-blankline-nvim
+        which-key-nvim
+        nvim-notify
+        noice-nvim
+        nui-nvim
+
+        # Editor
+        telescope-nvim
+        plenary-nvim
+        gitsigns-nvim
+        nvim-treesitter
+        #nvim-treesitter.withAllGrammars
+
+        # LSP
+        nvim-lspconfig
+
+        # Completion
+        nvim-cmp
+        cmp-nvim-lsp
+        cmp-buffer
+        cmp-path
+        luasnip
+        cmp_luasnip
+        nvim-autopairs
+
+        # LaTeX
+        vimtex
       ];
     };
 

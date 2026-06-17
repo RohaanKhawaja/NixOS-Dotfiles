@@ -4,7 +4,7 @@
 
 -- Primary
 hl.monitor({
-    output   = "DP-9",
+    output   = "DP-10",
     mode     = "preferred",
     position = "0x0",
     scale    = "1.0",
@@ -12,7 +12,7 @@ hl.monitor({
 
 -- Secondary
 hl.monitor({
-    output   = "DP-11",
+    output   = "DP-13",
     mode     = "preferred",
     position = "0x1080",
     scale    = "1.0",
