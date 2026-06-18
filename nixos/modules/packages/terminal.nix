@@ -9,6 +9,12 @@ let
     #luaPath = /home/rohaan/.config/nvim;
     luaPath = /. + "${config.myConfig.homeDir}/.config/nvim";
   };
+
+  # For old version of TDF
+  pkgs2505 = import (fetchTarball {
+    url = "https://github.com/NixOS/nixpkgs/archive/refs/heads/nixos-25.05.tar.gz";
+  }) { system = pkgs.system; };
+
 in
 
 {
@@ -33,7 +39,7 @@ in
     btop                      # System Resource Monitor
     nvtopPackages.amd         # GPU Resource Monitor (Change based on GPU brand)
     discordo                  # Client for Discord
-    tdf                       # PDF Viewer
+    #tdf                       # PDF Viewer (current version broken in tmux)
     img-cat                   # Image Viewer
     yazi                      # File Manager
     cmus                      # Music Player
@@ -65,6 +71,8 @@ in
     nsnake                    # Snake
     pipes                     # Pipes Screensaver
     bastet                    # Tetris
+  ] ++ [
+    pkgs2505.tdf              # Using older version of tdf for tmux compatibility (change if fixed)
   ];
 
   # Configure Path for ripgrep config

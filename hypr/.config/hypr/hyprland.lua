@@ -250,6 +250,7 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("pkill wofi || wofi --show drun")
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("pkill waybar || waybar"))
 hl.bind(mainMod .. "+ P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + V", hl.dsp.layout("togglesplit"))    -- dwindle only
+hl.bind(mainMod .. " + Z", hl.dsp.window.fullscreen())    -- dwindle only
 hl.bind(mainMod .. " + ALT + L", hl.dsp.exec_cmd(lockscreen))
 
 -- Move focus with mainMod + arrows/hjkl
