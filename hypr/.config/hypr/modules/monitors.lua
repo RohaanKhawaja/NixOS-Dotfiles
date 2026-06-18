@@ -12,7 +12,7 @@ hl.monitor({
 
 -- Secondary
 hl.monitor({
-    output   = "DP-13",
+    output   = "DP-12",
     mode     = "preferred",
     position = "0x1080",
     scale    = "1.0",
