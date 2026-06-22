@@ -39,7 +39,7 @@
     switcheroo                # File convertor
 
     # Creative Tools
-    #bambu-studio              # 3D Printing Slicer
+    #bambu-studio             # 3D Printing Slicer
     kicad                     # Circuit & PCB Design Suite
     freecad                   # General CAD
     ltspice                   # Circuit Simulation
@@ -49,6 +49,7 @@
     audacity                  # Audio Recording
     obs-studio                # Screen Recording/Streaming
 
+  # KDE Packages
   ] ++ (with pkgs.kdePackages; [
     elisa                     # Music Player
     kate                      # Rich Text Editor
