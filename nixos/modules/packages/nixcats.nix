@@ -50,6 +50,7 @@
         nvim-notify
         noice-nvim
         nui-nvim
+        nvim-tree-lua
 
         # Editor
         telescope-nvim

@@ -45,10 +45,12 @@
     hyprpaper                           # Wallpaper Utility
     mpvpaper                            # Live Wallpaper daemon
     rose-pine-cursor                    # Cursor theme
-    wofi                                # App Launcher
-    waybar                              # Status Bar
     networkmanagerapplet                # Network Applet
-    swaynotificationcenter              # Notification Utility
     cliphist                            # Clipboard History
+    quickshell                          # Shell UI
+    # Replaced by Quickshell
+    wofi                                # App Launcher (temporary enable till QS is configured)
+    #waybar                              # Status Bar
+    #swaynotificationcenter              # Notification Utility
   ];
 }
