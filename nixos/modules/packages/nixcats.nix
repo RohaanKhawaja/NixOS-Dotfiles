@@ -28,12 +28,21 @@
     # this includes LSPs
     lspsAndRuntimeDeps = {
       general = with pkgs; [
-        clang-tools
-        pyright
-        texlab
-        lua-language-server
         tree-sitter
         gcc
+        clang-tools                       # clangd
+        pyright                           # Python
+        texlab                            # LaTeX
+        lua-language-server               # Lua
+        zls                               # Zig
+        jdt-language-server               # Java
+        marksman                          # Markdown
+        bash-language-server              # Bash
+        nixd                              # Nix
+        vscode-langservers-extracted      # JSON, HTML, CSS
+        yaml-language-server              # YAML
+        taplo                             # TOML
+        cmake-language-server             # CMake
       ];
     };
 
@@ -56,8 +65,7 @@
         telescope-nvim
         plenary-nvim
         gitsigns-nvim
-        nvim-treesitter
-        #nvim-treesitter.withAllGrammars
+        nvim-treesitter.withAllGrammars
 
         # LSP
         nvim-lspconfig

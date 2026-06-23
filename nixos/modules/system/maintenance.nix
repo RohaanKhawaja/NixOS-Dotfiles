@@ -1,19 +1,19 @@
-# Rohaan's Nix Config - System Maintenance 
+# Rohaan's Nix Config - System Maintenance
 
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
-{ 
+{
   # Garbage Collection
   nix.gc = {
-    automatic = true; 
-    dates = "weekly"; 
-    options = "--delete-older-than 14d"; 
-  }; 
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 14d";
+  };
 
   # Automatic Updates
-  nix.optimise = { 
-    automatic = true; 
-    dates = [ "weekly" ]; 
-  }; 
-  
+  nix.optimise = {
+    automatic = true;
+    dates = [ "weekly" ];
+  };
+
 }
