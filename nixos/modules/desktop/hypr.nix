@@ -38,7 +38,6 @@
 
   environment.systemPackages = with pkgs; [
     hyprshot                            # Screenshot Utility
-    hyprlock                            # Lockscreen Utility
     hypridle                            # Idling Utility
     hyprshade                           # Screen colour adjustment
     hyprcursor                          # Cursor Utility
@@ -48,7 +47,9 @@
     networkmanagerapplet                # Network Applet
     cliphist                            # Clipboard History
     quickshell                          # Shell UI
+
     # Replaced by Quickshell
+    hyprlock                            # Lockscreen Utility (temporary enable till QS is configured)
     wofi                                # App Launcher (temporary enable till QS is configured)
     #waybar                              # Status Bar
     #swaynotificationcenter              # Notification Utility
