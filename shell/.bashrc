@@ -16,6 +16,7 @@ alias fp='z ..'
 alias fb='z -'
 alias ff='fastfetch'
 alias history='bat ~/.bash_history | rg'
+alias copy='pwd | wl-copy'
 
 # Nix Related Aliases
 alias nr='sudo nixos-rebuild switch'
