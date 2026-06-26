@@ -5,7 +5,6 @@ require("keymaps")
 require("autocmds")
 
 -- LazyVim Bootstrap method (not needed on NixOS with nixcats)
--- bootstrap lazy.nvim
 -- local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 -- if not vim.loop.fs_stat(lazypath) then
 --   vim.fn.system({
