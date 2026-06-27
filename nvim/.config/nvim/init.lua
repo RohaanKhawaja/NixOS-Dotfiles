@@ -4,7 +4,7 @@ require("options")
 require("keymaps")
 require("autocmds")
 
--- LazyVim Bootstrap method (not needed on NixOS with nixcats)
+-- -- LazyVim Bootstrap method (not needed on NixOS with nixcats)
 -- local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 -- if not vim.loop.fs_stat(lazypath) then
 --   vim.fn.system({
@@ -15,7 +15,7 @@ require("autocmds")
 -- end
 -- vim.opt.rtp:prepend(lazypath)
 --
--- Plugin Installation
+-- -- Plugin Installation
 -- require("lazy").setup({
 --   "dracula/vim",
 --   "nvim-lualine/lualine.nvim",

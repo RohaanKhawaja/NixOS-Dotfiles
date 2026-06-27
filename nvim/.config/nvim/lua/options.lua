@@ -6,6 +6,7 @@ local options = {
   number = true,		      -- Line numbers
   relativenumber = true,   -- Relative Line numbers
   wrap = true,		         -- Wrap lines
+  linebreak = true,        -- Don't wrap words
   showbreak = "↪ ",	      -- Show symbol for line breaks
   scrolloff = 11, 		   -- Keep 10 lines above/below cursor
   sidescrolloff = 8, 	   -- Keep 8 columns left/right of cursor
