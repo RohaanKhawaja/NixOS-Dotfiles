@@ -45,6 +45,7 @@ in
     cmus                      # Music Player
     taskwarrior3              # Task Manager
     visidata                  # Spreadsheet editor
+    khal                      # Calander
 
     # Hardware/System Inspection
     lshw                      # Show Bus ID values
