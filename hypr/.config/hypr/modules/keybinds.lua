@@ -17,8 +17,8 @@ hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + escape", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("pkill wofi || wofi --show drun"))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("pkill waybar || waybar"))
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("dms ipc spotlight toggle"))
+--hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("pkill waybar || waybar"))
 hl.bind(mainMod .. "+ P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + V", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + Z", hl.dsp.window.fullscreen())    -- dwindle only
@@ -45,6 +45,7 @@ hl.bind(mainMod .. " + SHIFT + h",  hl.dsp.window.move({ direction = "left" }))
 hl.bind(mainMod .. " + SHIFT + l",  hl.dsp.window.move({ direction = "right" }))
 hl.bind(mainMod .. " + SHIFT + k",  hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + j",  hl.dsp.window.move({ direction = "down" }))
+
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]

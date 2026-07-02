@@ -2,7 +2,6 @@
 
 { config, pkgs, ... }:
 
-#${config.myConfig.desktop}
 {
   # Enable DMS and modules
   programs.dms-shell = {
@@ -24,4 +23,16 @@
 
   # Enable DankSearch
   programs.dsearch.enable = true;
+
+  # Enable Dank Greeter
+  services.displayManager.dms-greeter = {
+    enable = true;
+    compositor.name = "${config.myConfig.desktop}";
+    configHome = "${config.myConfig.homeDir}";
+    configFiles = [
+      "${config.myConfig.homeDir}/.config/DankMaterialShell/settings.json"
+      "${config.myConfig.homeDir}/.local/state/DankMaterialShell/session.json"
+    ];
+  };
+
 }

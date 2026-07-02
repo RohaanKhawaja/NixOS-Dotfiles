@@ -11,12 +11,13 @@ hl.config({
         border_size = 1,
 
         col = {
-            active_border   = { colors = {"rgba(33ccffee)", "rgba(00ff99ee)"}, angle = 45 },
-            inactive_border = "rgba(595959aa)",
+            --active_border   = { colors = {"rgb(BD93F9)", "rgb(FF79C6)"}, angle = 45 },
+            active_border   = "rgb(BD93F9)"
+            --inactive_border = "rgba(595959aa)",
         },
 
         -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
-        resize_on_border = true,
+        resize_on_border = false,
 
         -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
         allow_tearing = false,
@@ -48,7 +49,7 @@ hl.config({
     },
 
     animations = {
-        enabled = false,
+        enabled = true,
     },
 })
 
