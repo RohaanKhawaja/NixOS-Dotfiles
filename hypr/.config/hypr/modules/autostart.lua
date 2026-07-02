@@ -4,11 +4,11 @@
 
 hl.on("hyprland.start", function()
   local apps = {
-    "waybar",
-    "hyprpaper",
-    "hypridle",
+    -- "waybar",
+    -- "hyprpaper",
+    -- "hypridle",
     "hyprcursor",
-    "hyprlock",
+    -- "hyprlock",
   }
   hl.exec_cmd(table.concat(apps, " & "))
 
