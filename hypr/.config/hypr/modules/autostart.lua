@@ -8,6 +8,7 @@ hl.on("hyprland.start", function()
     "hyprpaper",
     "hypridle",
     "hyprcursor",
+    "hyprlock",
   }
   hl.exec_cmd(table.concat(apps, " & "))
 

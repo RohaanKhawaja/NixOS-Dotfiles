@@ -10,6 +10,23 @@
     withUWSM = true;
   };
 
+  programs.dms-shell = {
+    enable = true;
+
+    systemd = {
+      enable = true;                    # Systemd service for auto-start
+      restartIfChanged = true;          # Auto-restart dms.service when dms-shell changes
+    };
+
+    # Core features
+    enableSystemMonitoring = true;      # System monitoring widgets (dgop)
+    enableVPN = true;                   # VPN management widget
+    enableDynamicTheming = true;        # Wallpaper-based theming (matugen)
+    enableAudioWavelength = true;       # Audio visualizer (cava)
+    enableCalendarEvents = true;        # Calendar integration (khal)
+    enableClipboardPaste = true;        # Pasting from the clipboard history (wtype)
+  };
+
   # Ensure no session manager
   services.displayManager.sddm.enable = false;
 
@@ -38,20 +55,18 @@
 
   environment.systemPackages = with pkgs; [
     hyprshot                            # Screenshot Utility
-    hypridle                            # Idling Utility
     hyprshade                           # Screen colour adjustment
     hyprcursor                          # Cursor Utility
-    hyprpaper                           # Wallpaper Utility
     mpvpaper                            # Live Wallpaper daemon
     rose-pine-cursor                    # Cursor theme
     networkmanagerapplet                # Network Applet
-    cliphist                            # Clipboard History
-    quickshell                          # Shell UI
 
-    # Replaced by Quickshell
-    hyprlock                            # Lockscreen Utility (temporary enable till QS is configured)
-    wofi                                # App Launcher (temporary enable till QS is configured)
-    #waybar                              # Status Bar
-    #swaynotificationcenter              # Notification Utility
+    # Replaced by Dank Material Shell
+    swaynotificationcenter              # Notification Utility
+    wofi                                # App Launcher
+    hyprlock                            # Lockscreen Utility
+    hypridle                            # Idling Utility
+    cliphist                            # Clipboard History
+    hyprpaper                           # Wallpaper Utility
   ];
 }

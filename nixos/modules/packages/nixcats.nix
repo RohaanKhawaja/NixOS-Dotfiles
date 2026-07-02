@@ -60,6 +60,7 @@
         noice-nvim
         nui-nvim
         nvim-tree-lua
+        nvim-colorizer-lua
 
         # Editor
         telescope-nvim
