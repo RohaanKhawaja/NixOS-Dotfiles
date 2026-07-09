@@ -19,6 +19,10 @@ alias bs='source ~/.bashrc'
 alias history='bat ~/.bash_history | rg'
 alias copyPath='pwd | wl-copy'
 
+# Aliases for mounting/unmounting
+alias usbMount='sudo mount /dev/sda1 /mnt/usb && echo USB MOUNTED!'
+alias usbUnmount='sudo umount /dev/sda1 && echo USB UNMOUNTED!'
+
 # Nix Related Aliases
 alias nr='sudo nixos-rebuild switch'
 alias nt='sudo nixos-rebuild test'

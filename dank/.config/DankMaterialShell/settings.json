@@ -259,8 +259,9 @@
   "brightnessDevicePins": {},
   "wifiNetworkPins": {
     "preferredWifi": [
-      "pocof6",
-      "eduroam"
+      "Bakerkhani_premium",
+      "BTB-625JFM",
+      "pocof6"
     ]
   },
   "bluetoothDevicePins": {},
@@ -469,10 +470,10 @@
           "enabled": true
         }
       ],
-      "spacing": 4,
+      "spacing": 0,
       "innerPadding": -8,
-      "bottomGap": 0,
-      "transparency": 1,
+      "bottomGap": -1,
+      "transparency": 0,
       "widgetTransparency": 1,
       "squareCorners": false,
       "noBackground": false,
@@ -494,8 +495,8 @@
       "fontScale": 1,
       "iconScale": 1,
       "autoHide": false,
-      "autoHideDelay": 250,
-      "showOnWindowsOpen": false,
+      "autoHideDelay": 152,
+      "showOnWindowsOpen": true,
       "openOnOverview": false,
       "visible": true,
       "popupGapsAuto": true,

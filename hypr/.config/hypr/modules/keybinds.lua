@@ -66,7 +66,8 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 -- Dank Material Shell Commands
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("dms ipc spotlight toggle"))
 hl.bind(mainMod .. "+" .. secondMod .. " + L", hl.dsp.exec_cmd("dms ipc call lock lock"))
--- hl.bind(mainMod .. " + ")
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("dms ipc call widget toggle controlCenterButton"))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("dms ipc call widget toggle notificationButton"))
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
