@@ -25,6 +25,13 @@ alias nt='sudo nixos-rebuild test'
 alias ns="nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history"
 alias ni='nix-shell -p'
 
+# Git Related Aliases
+alias gs='git status'
+alias gf='git fetch'
+alias ga='git add -A'
+alias gc='git commit -m'
+alias gpr='git push -u origin'
+
 # Neovim Related Aliases
 alias v='nvim .'
 # Greps file names in directory before oepning in nvim

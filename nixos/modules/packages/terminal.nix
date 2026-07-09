@@ -66,7 +66,7 @@ in
     cmatrix                   # Matrix Effect
     lolcat                    # Colours
     nyancat                   # Nyancat
-    sl                        # Locomotive
+    #sl                        # Locomotive (actually pmo)
     tty-solitaire             # Solitaire
     solitaire-tui             # Solitaire
     nsnake                    # Snake
