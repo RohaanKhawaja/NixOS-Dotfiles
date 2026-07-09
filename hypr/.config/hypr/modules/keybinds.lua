@@ -13,6 +13,7 @@ hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 --local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("pkill wofi || wofi --show drun"))
 
 hl.bind(mainMod .. " + escape", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
@@ -65,6 +66,7 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 -- Dank Material Shell Commands
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("dms ipc spotlight toggle"))
 hl.bind(mainMod .. "+" .. secondMod .. " + L", hl.dsp.exec_cmd("dms ipc call lock lock"))
+-- hl.bind(mainMod .. " + ")
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })

@@ -5,7 +5,7 @@
 -- Primary
 hl.monitor({
     output   = "eDP-1",
-    mode     = "preferred",
+    mode     = "2880x1800@120",
     position = "0x0",
     scale    = "1.67",
 })

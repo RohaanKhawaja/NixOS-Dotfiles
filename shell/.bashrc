@@ -17,7 +17,7 @@ alias fb='z -'
 alias ff='fastfetch'
 alias bs='source ~/.bashrc'
 alias history='bat ~/.bash_history | rg'
-alias copy='pwd | wl-copy'
+alias copyPath='pwd | wl-copy'
 
 # Nix Related Aliases
 alias nr='sudo nixos-rebuild switch'
@@ -30,7 +30,7 @@ alias gs='git status'
 alias gf='git fetch'
 alias ga='git add -A'
 alias gc='git commit -m'
-alias gpr='git push -u origin'
+alias gpr='git push -u origin main'
 
 # Neovim Related Aliases
 alias v='nvim .'
