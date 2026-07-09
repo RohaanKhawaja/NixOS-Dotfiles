@@ -12,7 +12,7 @@
   programs.hyprland = {
     enable = true;
     xwayland.enable = true;
-    #withUWSM = true;
+    withUWSM = true;
   };
 
   # Ensure no session manager
