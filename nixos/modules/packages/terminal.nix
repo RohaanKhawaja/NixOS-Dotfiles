@@ -37,9 +37,9 @@ in
 
     # CLI Apps
     btop                      # System Resource Monitor
-    nvtopPackages.amd         # GPU Resource Monitor (Change based on GPU brand)
+    nvtopPackages.intel       # GPU Resource Monitor (Change based on GPU brand)
     discordo                  # Client for Discord
-    #tdf                       # PDF Viewer (current version broken in tmux)
+    #tdf                      # PDF Viewer (current version broken in tmux)
     img-cat                   # Image Viewer
     yazi                      # File Manager
     cmus                      # Music Player

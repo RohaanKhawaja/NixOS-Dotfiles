@@ -22,7 +22,7 @@
     kitty
 
     # Hardware
-    wootility                 # Wooting Configuration
+    #wootility                # Wooting Configuration (for desktop)
     polychromatic             # RGB Configuration
 
     # Office & Productivity
