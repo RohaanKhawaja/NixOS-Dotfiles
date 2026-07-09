@@ -1,16 +1,16 @@
-# Rohaan's NixOS Config - System packages 
+# Rohaan's NixOS Config - System packages
 
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
 {
 
   environment.systemPackages = with pkgs; [
-    # System Utilities 
+    # System Utilities
     ntfs3g                    # NTFS Drive Utility
     brightnessctl             # Brightness Controls
     playerctl                 # Mutlimedia Controls
     pavucontrol               # Volume Control
-    pulseaudioFull            # Audio Utils 
+    pulseaudioFull            # Audio Utils
     efibootmgr                # EFI Boot Manager
     libguestfs                # Virtual HDD Tool
     libinput                  # Input Library

@@ -1,8 +1,8 @@
 # Rohaan's Nix Config - Input Settings
 
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
-{ 
+{
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
