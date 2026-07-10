@@ -68,6 +68,7 @@ hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("dms ipc spotlight toggle"))
 hl.bind(mainMod .. "+" .. secondMod .. " + L", hl.dsp.exec_cmd("dms ipc call lock lock"))
 hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("dms ipc call widget toggle controlCenterButton"))
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("dms ipc call widget toggle notificationButton"))
+hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("dms ipc call dash toggle '' "))
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
