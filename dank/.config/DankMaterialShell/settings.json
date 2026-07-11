@@ -201,7 +201,7 @@
   "networkPreference": "wifi",
   "iconTheme": "System Default",
   "cursorSettings": {
-    "theme": "System Default",
+    "theme": "BreezeX-RosePine-Linux",
     "size": 24,
     "niri": {
       "hideWhenTyping": false,
@@ -241,21 +241,21 @@
   "acMonitorTimeout": 0,
   "acLockTimeout": 0,
   "acSuspendTimeout": 0,
-  "acSuspendBehavior": 0,
+  "acSuspendBehavior": 2,
   "acProfileName": "",
   "batteryMonitorTimeout": 0,
   "batteryLockTimeout": 0,
   "batterySuspendTimeout": 0,
-  "batterySuspendBehavior": 0,
+  "batterySuspendBehavior": 2,
   "batteryProfileName": "",
   "batteryChargeLimit": 100,
-  "lockBeforeSuspend": false,
+  "lockBeforeSuspend": true,
   "loginctlLockIntegration": true,
   "fadeToLockEnabled": true,
   "fadeToLockGracePeriod": 5,
   "fadeToDpmsEnabled": true,
   "fadeToDpmsGracePeriod": 5,
-  "launchPrefix": "uwsm-app",
+  "launchPrefix": "",
   "brightnessDevicePins": {},
   "wifiNetworkPins": {
     "preferredWifi": [
@@ -586,7 +586,7 @@
   "desktopWidgetGroups": [],
   "builtInPluginSettings": {
     "dms_settings_search": {
-      "trigger": "?"
+      "trigger": "$"
     }
   },
   "clipboardEnterToPaste": false,

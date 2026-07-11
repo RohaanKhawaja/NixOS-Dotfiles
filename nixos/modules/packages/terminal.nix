@@ -51,6 +51,7 @@ in
     lshw                      # Show Bus ID values
     xev                       # Event Logger
     usbutils                  # Shows USB Devices
+    archimede                 # Directory Information
 
     # Terminal Aesthetics
     fastfetch                 # System Specs
