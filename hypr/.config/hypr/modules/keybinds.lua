@@ -9,6 +9,7 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 local secondMod = "ALT" -- Sets "ALT" key as main modifier
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + SHIFT + RETURN", hl.dsp.exec_cmd("kitty -e sh -c 'tmux has-session 2>/dev/null && tmux attach || tmux new-session'"))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 --local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
