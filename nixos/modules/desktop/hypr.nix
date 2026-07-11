@@ -8,9 +8,6 @@
     ./dms.nix
   ];
 
-  # Enable Niri
-  programs.niri.enable = true;
-
   # Enable Hyprland
   programs.hyprland = {
     enable = true;
