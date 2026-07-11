@@ -18,6 +18,7 @@
     wl-clipboard              # Wayland Clipboard Utility
     cairo                     # 2D Graphics Library
     ffmpeg                    # Video/Audio Processing
+    upower                    # Power management
 
     # QT Framework
     libsForQt5.qt5ct          # QT5 Framework

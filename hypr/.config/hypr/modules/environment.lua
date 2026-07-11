@@ -6,3 +6,4 @@
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("DMS_PREFERRED_BATTERY", "/org/freedesktop/UPower/devices/battery_BAT1")

@@ -40,7 +40,14 @@
     CURRENT_DESKTOP = config.myConfig.desktop;
   };
 
+  # Setting cursor theme for GTK apps
+  environment.etc."gtk-3.0/settings.ini".text = ''
+    [Settings]
+    gtk-cursor-theme-name=BreezeX-RosePine-Linux
+    gtk-cursor-theme-size=24
+  '';
 
+  # Desktop Specific Packages
   environment.systemPackages = with pkgs; [
     hyprshot                            # Screenshot Utility
     hyprshade                           # Screen colour adjustment
